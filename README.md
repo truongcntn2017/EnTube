@@ -46,40 +46,6 @@ YouTube, one of the largest online video-sharing platforms today, has provided a
 
 | Column     | Description  |
 | -------    | -----------  |
-| channel\_id                               | Id of channel             |
-|    channel\_name                               | Name of channel                   |
-|        channel\_category                         | Category of channel                  |
-|        channel\_started                              | Started year of channel                   |
-|        channel\_rank                               | Rank of channel in most-subscribed Vietnamese channels |
-|        channel\_subscribers                             | Number of subscribers of channel          |
-|       id                             | Id of video         |
-|        title                             | Title of video          |
-|        length\_title                             | Length title of video (tokens)         |
-|        categories                             | Categories of video        |
-|        description                             | Description of video        |
-|        tags                             | Tags of video        |
-|        num\_tags                             | Number of tags of video        |
-|        upload\_date                             | Uploaded date of video        |
-|        delta\_upload\_date                             | Distance between collected date and uploaded date (days) |
-|        duration                             | Duration of video (minutes)     |
-|        view\_count                             | Number of views of video     |
-|        like\_count                             | Number of likes of video     |
-|        comment\_count                             | Number of comments of video     |
-|        dislike\_count                             | Number of dislikes of video     |
-|        like\_per\_view                             | Number of likes per views of video     |
-|        comment\_per\_view                             | Number of comments per views of video     |
-|        dislike\_per\_view                             | Number of dislikes per views of video     |
-|        engagement\_rate\_1                             | Total comments and likes per views of video     |
-|        engagement\_rate\_2                            | Total comments, likes, and dislikes per views of video    |
-|        q\_score                           | Q score of video    |
-|        label\_1                           | Engagement level based on engagement\_rate\_1 of video    |
-|        label\_2                           | Engagement level based on q\_score of video     |
-
-## Data
-
-
-| Column     | Description  |
-| -------    | -----------  |
 | channel\_id                               | 0.000000           |
 |    channel\_name                               | 0.000000                |
 |        channel\_category                         | 0.000000                 |
@@ -110,3 +76,9 @@ YouTube, one of the largest online video-sharing platforms today, has provided a
 |        label\_2                           | 0.000000   |
 
 
+## Data
+
+* sample/audio_by_year: folder contains audio by year
+* sample/thumbnails_by_year: folder contains thumbnails by year
+* sample/video_by_year: folder contains video by year
+* sample/entube_final.parquet: files contains metadata
