@@ -1,0 +1,4 @@
+plotly
+seaborn
+numpy
+pandas
