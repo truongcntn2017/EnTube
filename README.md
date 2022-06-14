@@ -5,10 +5,10 @@ YouTube, one of the largest online video-sharing platforms today, has provided a
 # Table of Contents
 1. [Meta data](#Metadata)
 2. [Missing rate](#MissingRate)
-3. [Sample data](#Data)
+3. [Sample](#Sample)
+4. [Embedding](#Embedding)
 
 ## Metadata
-
 
 | Column     | Description  |
 | -------    | -----------  |
@@ -41,7 +41,7 @@ YouTube, one of the largest online video-sharing platforms today, has provided a
 |        label\_1                           | Engagement level based on engagement\_rate\_1 of video    |
 |        label\_2                           | Engagement level based on q\_score of video     |
 
-## Missing Rate
+## MissingRate
 
 
 | Column     | Description  |
@@ -76,9 +76,26 @@ YouTube, one of the largest online video-sharing platforms today, has provided a
 |        label\_2                           | 0.000000   |
 
 
-## Data
+## Sample
 
 * sample/audio_by_year: folder contains audio by year
 * sample/thumbnails_by_year: folder contains thumbnails by year
 * sample/video_by_year: folder contains video by year
 * sample/entube_final.parquet: files contains metadata
+
+## Embedding
+
+You can get data which is feature extraction at [here](https://drive.google.com/drive/folders/1SM-2VzCQoSAfrI_eGVp8JJ5NU7iKJ6Lx). 
+* Data input includes 3 files: entube_embedding_train.pt, entube_embedding_val.pt, entube_embedding_test.pt
+* Data in each file is a list with each item is a dictionary including keys:
+
+```python
+'id': id of video on Youtube
+'embedding_title':tensor which is feature extraction of title, has shape: (768,)
+'embedding_tag':tensor which is feature extraction of tag, has shape: (768,)
+'embedding_thumbnail':tensor which is feature extraction of thumbnail, has shape: (2560,)
+'embedding_video':tensor which is feature extraction of the video, has shape: (2304,1,2,2)
+'embedding_audio':tensor which is feature extraction of audio, has shape: (128,62)
+'label_1':tensor of label 1 which not use q-score
+'label_2':tensor of label 2 which use q-score
+```
