@@ -95,7 +95,7 @@ You can get data which is feature extraction at [here](https://drive.google.com/
 'embedding_tag':tensor which is feature extraction of tag, has shape: (768,)
 'embedding_thumbnail':tensor which is feature extraction of thumbnail, has shape: (2560,)
 'embedding_video':tensor which is feature extraction of the video, has shape: (2304,1,2,2)
-'embedding_audio':tensor which is feature extraction of audio, has shape: (128,62)
+'embedding_audio':tensor which is feature extraction of audio, has shape: (62, 128)
 'label_1':tensor of label 1 which not use q-score
 'label_2':tensor of label 2 which use q-score
 ```
