@@ -2,3 +2,5 @@ plotly
 seaborn
 numpy
 pandas
+pyarrow
+fastparquet
