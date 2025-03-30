@@ -7,6 +7,8 @@ YouTube, one of the largest online video-sharing platforms today, has provided a
 2. [Missing rate](#MissingRate)
 3. [Sample](#Sample)
 4. [Embedding](#Embedding)
+5. [Zip](#Zip)
+
 
 ## Metadata
 
@@ -99,3 +101,9 @@ You can get data which is feature extraction at [here](https://drive.google.com/
 'engagement_rate_label':tensor of label 1 which not use q-score
 'q_score_label':tensor of label 2 which use q-score
 ```
+
+## Zip
+
+You can get data zip in here at [here](https://drive.google.com/drive/folders/1QVxNsnB8iCRwrU6FoQyLWcLBhK-SZGQh?usp=drive_link). 
+
+* Data input includes 3 folders: audio_short_zip, video_short_zip, thumbnails_zip
